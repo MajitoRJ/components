@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+}
+
+/* ------ */
+nav{
+    width: 300px;
+    background:#d9d9d9 ;
+    margin: 40px auto;
+}
+label span {
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+span{
+    background: #2d2f31;
+    color: white;
+    font-variant: small-caps; /*las letras minúsculas en el texto se muestran como pequeñas mayúsculas,*/
+    cursor: pointer;
+    display: block;
+}
+li a {
+    text-decoration: none;
+    color: #2d2f31;
+}
+
+
+span::after{
+    float: right;
+    content: "+"; /*inserta contenido adicional antes o después*/
+}
+.slide{
+    clear: both; /*aparecen debajo de los elementos flotantes tanto a la izquierda como a la derecha.*/
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+}
+.slide li {
+    padding: 30px;
+}
+#touch {
+    position: absolute;
+    opacity: 0;
+    height: 0px;
+}
+#touch:checked + .slide{
+    height: 300px;
+}

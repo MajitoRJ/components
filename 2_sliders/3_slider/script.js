@@ -21,18 +21,16 @@ function moveToRight() {
         slider.style.transform = `translate(-${operacion}%)`
         slider.style.transition = "none"
         return
-    }  counter++;
-    
-        // console.log(counter)
-        operacion = operacion + withImg
-        slider.style.transform = `translate(-${operacion}%)`
-        slider.style.transition = "all ease .6s"
-        
-       
-    }
+    }  
+    counter++;
+    operacion = operacion + withImg
+    slider.style.transform = `translate(-${operacion}%)`
+    slider.style.transition = "all ease .6s"       
+}
 
 function moveToLeft() {
     counter--;
+    
     if(counter < 0 ) {
         counter = sliderSection.length-1;
         operacion = withImg * (sliderSection.length-1)
@@ -41,9 +39,7 @@ function moveToLeft() {
         return;
     } 
      
-        operacion = operacion - withImg
-        slider.style.transform = `translate(-${operacion}%)`
-        slider.style.transition = "all ease .6s"
-    
-    
+    operacion = operacion - withImg
+    slider.style.transform = `translate(-${operacion}%)`
+    slider.style.transition = "all ease .6s"
 }
