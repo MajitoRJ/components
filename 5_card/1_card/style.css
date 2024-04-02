@@ -1,0 +1,117 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box ;
+}
+
+body{
+    background-color: rgb(184, 181, 181);
+    font-family: "Quicksand", sans-serif;
+
+}
+/* ol {
+    list-style: none;
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 14px;
+}
+li{
+    margin-bottom:5px;
+
+}
+.babydoll{
+    margin-top: 5px;
+}
+.elementos {
+    display: flex;
+    width: 37%;
+    height: 180px;
+    background: #fff;
+    top: 50%;
+    left: 50%;
+    margin-top: 450px;
+    margin-left:28% ;
+}
+
+.eye-shadow{
+    font-size: 18px;
+    margin-right: 35px;
+}
+.cantidad{
+    margin-top: 40px;
+}
+.cantidad input{
+    width: 100px;
+    height: 40px;
+    border: solid rgb(161, 161, 161);
+    border-width: 1px;
+    background: #fff;
+}
+.remove{
+    font-size: 14px;
+    color: #222222;
+    margin-top: 85px;
+    margin-left: -85px;
+}
+.price{
+    display: inline-block;
+    font-size: 17px;
+    margin-top: 40px;
+    margin-left: 155px;
+} */
+.elementos{
+    display: flex;
+    width: 500px;
+    background: #fff;
+}
+
+
+.img{
+    width: 20%;
+    height: auto;
+}
+
+.img img{
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.description{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.description ul{
+    list-style: none;
+}
+
+.description ul li:nth-child(1){
+    font-size: 13px;
+}
+.description ul li:nth-child(3){
+    font-size: 10px;
+}
+.cantidad{
+    border: #f2f2f2 1px solid;
+    padding: 8px;
+}
+.cantidad label{
+    font-weight: bold;
+}
+.cantidad input[type="text"]{
+    text-align: center;
+    width: 55px;
+    border: none;
+}
+.text-remove{
+    text-align: center;
+}
+.remove{
+    color: #000;
+    font-size: 12px; 
+}
+.price{
+    font-size:15px ;
+}
